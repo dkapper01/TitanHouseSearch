@@ -9,11 +9,13 @@
 
 <body>
 <h1>Text Manipulater</h1> 
-<form onsubmit="submitText()">
-    <input class="form-control form-control-lg" type="text" placeholder="Enter Text" id="submit">
-    <input type="submit" value="Value">     
+<form>
+    <input class="form-control form-control" type="text" placeholder="Enter Text" id="inputText">
+    <input type="button" class="btn btn-primary" value="Submit" onclick="submitText()">
 </form>
-
+<div class="showText">
+<p id="innterText">Show text here</p>
+</div>
 
 <script type="text/javascript" src="javascript.js"></script>
 </body>
