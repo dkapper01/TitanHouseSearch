@@ -11,7 +11,7 @@ function submitText() {
         toArr[toArr.length - 1 - i] = tempVar; 
     } 
     var answer = toArr.join(''); 
-   document.getElementById('innterText').innerHTML = answer; 
+   document.querySelector('.innterText').innerHTML = answer; 
 }
 
 function meanMedianMode(array) {
