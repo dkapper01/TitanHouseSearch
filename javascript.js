@@ -14,6 +14,11 @@ function submitText() {
    document.querySelector('.innterText').innerHTML = answer; 
 }
 
+function changePlaceHolder() {
+    var addPlaceHolder = document.getElementById('inputText').placeholder = "Mean Median Mode";  
+    console.log('red hat'); 
+}
+
 function meanMedianMode(array) {
     return {
         mean: getMean(array),
