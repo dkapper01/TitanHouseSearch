@@ -14,12 +14,15 @@ function submitText() {
    document.querySelector('.innterText').innerHTML = answer; 
 }
 
-function changePlaceHolder() {
-    var addPlaceHolder = document.getElementById('inputText').placeholder = "Mean Median Mode";  
-    console.log('red hat'); 
+function reverseText() {
+    document.getElementById('inputText').value = ''; 
+    document.getElementById('inputText').placeholder = "Reverse Text";  
 }
 
+
 function meanMedianMode(array) {
+    document.getElementById('inputText').value = ''; 
+    document.getElementById('inputText').placeholder = "Mean Median Mode";  
     return {
         mean: getMean(array),
         median: getMedian(array)
@@ -27,9 +30,9 @@ function meanMedianMode(array) {
     };
 }
 function getMean(array) {
-    var num=0; 
-    var mean=0; 
-    var mean; 
+    var num = 0; 
+    var mean = 0; 
+    var mean = 0; 
     array.forEach(number => {
         num += number; 
     });
