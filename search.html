@@ -1,76 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="main.css">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>TitanSearch</title>
+        <link rel="stylesheet" href="main.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="index.html">TitanSearch</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">TitanHouse</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Search<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+              <a class="nav-link" href="#">LinkGenerator</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#" onclick="searcher()">Search</a>
-          </li> -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                X-Ray
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:5uikxuejpns" target="_blank">Bloomberg</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:0sdhbfrhd84" target="_blank">Linkedin</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:wz4-qnsvttw" target="_blank">Facebook</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:kt8vlgtpu7o" target="_blank">Business Wire</a>
+            </li>
         </ul>
-   
       </div>
     </nav>
-<!-- 
-    <main role="main" class="container">
-      <div class="toAddSpace"></div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          
 
-            <form>
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="submitText()">Submit</button>
-                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" data-toggle="collapse" data-target="#collapseExample" href="#" onclick="reverseText()">Reverse Text</a>
-                    <a class="dropdown-item" data-toggle="collapse" data-target="#collapseExample" href="#" onclick="meanMedianMode()">Mean Median Mode</a>
-                  </div>
-                </div>
-                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Reverse Text" id="inputText">
-              </div>
-            </form>
-            <div class="collapse mt-2" id="collapseExample">
-              <div class="card card-body">
-                <h5 class="innterText" onclick="meanMedianMode([56, 74, 25, 6, 1])">Show text here</h5>              
-              </div>
-            </div>
-                      
-
-        </div>
-      </div>
-    </main> -->
     <div class="toAddSpace"></div>
     <div class="container">
-
-        <form class="form-inline my-2 my-lg-0">
-            <input id="searchBox" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchBtn">Search</button>
-          </form>
-          <p class="putText">
-            text
-          </p>
+      <div class="row">
+          <div class="col-md-3">
+            <!-- 1 of 3 -->
+          </div>
+          <div class="col-md-6">
+            <p>Under Construction Bome Back Tomorrow</p>
+              <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="submetCompany()">Go!</button>
+                  </span>
+                  <input id="company" type="text" class="form-control" placeholder="Enter Company" aria-label="Enter Company">
+                </div>
+                <!-- <b /> -->
+                <ul id="toggleUl" class="">
+                <div class="list-group data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"" onclick="showHide()">
+                    <a href="www.google.com" class="linksOne mt-2 list-group-item list-group-item-action" target="_blank"></a>             
+                    <a href="www.google.com" class="linksTwo list-group-item list-group-item-action"></a>
+                    <!-- <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success"></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a> -->
+                  </div>
+                </ul>
+                <a href="http//:www.google.com/President AND/"DisplayWorks"">click</a>
+          </div>
+          <div class="col-md-3">
+            <!-- 3 of 3 -->
+          </div>
     </div>
 
 
