@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>TitanHouse Search</title>
     <link rel="stylesheet" href="main.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">TitanHouse</a>
+      <a class="navbar-brand" href="#">TitanHouse Search</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,11 +20,25 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <!-- <li class="nav-item active">
-            <a class="nav-link" href="index.html"><span class="sr-only">(current)</span></a>
-          </li> -->
-          <li class="nav-item">
             <a class="nav-link" href="search.html">Search</a>
-          </li>
+          </li> -->
+          <!-- <span class="sr-only">(current)</span> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="search.html">Generator</a>
+          </li> -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                X-Ray
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:5uikxuejpns" target="_blank">Bloomberg</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:0sdhbfrhd84" target="_blank">Linkedin</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:wz4-qnsvttw" target="_blank">Facebook</a>
+                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:kt8vlgtpu7o" target="_blank">Business Wire</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
+            </li>
         </ul>
       </div>
     </nav>
@@ -76,7 +90,6 @@
   })();
 </script>
 <gcse:search></gcse:search>
-
 
 
   </div>
