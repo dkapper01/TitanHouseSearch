@@ -10,13 +10,16 @@ document.getElementById("companyEnter").addEventListener('keydown', function(e) 
 
 function submetCompany() {
     var getCompany = document.getElementById("companyEnter").value; 
-    document.querySelector(".links1").innerHTML = "President AND " + "&quot" + getCompany + "&quot"; 
-    document.querySelector(".links2").innerHTML = "Vice President AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links3").innerHTML = "CEO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links4").innerHTML = "CFO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links5").innerHTML = "COO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links6").innerHTML = "CMO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links7").innerHTML = "CMO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links8").innerHTML = "CLO AND " + "&quot" + getCompany + "&quot";
-    document.querySelector(".links9").innerHTML = "site:www.businesswire.com AND " + "&quot" + getCompany + "&quot" + " AND Press Release";
+    var getExecutive = document.getElementById('executiveEnter').value; 
+
+    document.querySelector(".links0").innerHTML = "&quot" + getCompany + "&quot" + " AND "+ "&quot" + getExecutive + "&quot";     
+    document.querySelector(".links1").innerHTML = "&quot" + "President" + "&quot" + " AND " + "&quot" + getCompany + "&quot"; 
+    document.querySelector(".links2").innerHTML = "&quot" + "Vice President" + "&quot" + " AND " + "&quot" + getCompany + "&quot";  
+    document.querySelector(".links3").innerHTML = "&quot" + "CEO" + "&quot" + " AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links4").innerHTML = "&quot" + "CFO AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links5").innerHTML = "&quot" + "COO AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links6").innerHTML = "&quot" + "CMO AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links7").innerHTML = "&quot" +  " AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links8").innerHTML = "&quot" + "CLO AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links9").innerHTML = "&quot" + "site:www.businesswire.com AND " + "&quot" + getCompany + "&quot" + " AND " + "&quot" + getExecutive + "&quot";
 }
