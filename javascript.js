@@ -26,7 +26,7 @@ function submetCompany() {
     document.querySelector(".links2").innerHTML = '<a target="_blank" href=' + nameANDcompanyJoinedORHiredORPromoted + '>' + getExecutive + ' AND ' + getCompany  + ' Joined OR Hired OR Promoted'  + '</a>';
     document.querySelector(".links3").innerHTML = '<a target="_blank" href=' + nameANDcompanysaidORcommentedORquoted + '>' + getExecutive + ' AND ' + getCompany  + ' Said OR Commented OR Quoted'  + '</a>';
     document.querySelector(".links4").innerHTML = '<a target="_blank" href=' + getCompanyPresidentANDVicepresident+'>'+getCompany+ ' President AND Vice President'+'</a>';
-    // document.querySelector(".links3").innerHTML = "&quot" + "CEO" + "&quot" + " AND " + "&quot" + getCompany + "&quot";
+    document.querySelector(".links5").innerHTML =  '<a target="_blank" href=' + getCompanyCeoANDCfoANDCoo+'>'+getCompany+ ' CEO AND CFO AND COO'+'</a>';
     // document.querySelector(".links4").innerHTML = "&quot" + "CFO" + "&quot" + " AND " + "&quot" + getCompany + "&quot";
     // document.querySelector(".links5").innerHTML = "&quot" + "COO AND" + "&quot" + getCompany + "&quot";
     // document.querySelector(".links6").innerHTML = "&quot" + "CMO" + "&quot" + " AND " + "&quot" + getCompany + "&quot";
