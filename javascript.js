@@ -26,7 +26,7 @@ function submetCompany() {
     document.querySelector(".links3").innerHTML = '<a target="_blank" href=' + nameANDcompanysaidORcommentedORquoted + '>' + getExecutive + ' AND ' + getCompany  + ' Said OR Commented OR Quoted'  + '</a>';
     document.querySelector(".links4").innerHTML = '<a target="_blank" href=' + getCompanyPresidentANDVicepresident+'>'+getCompany+ ' President AND Vice President'+'</a>';
     document.querySelector(".links5").innerHTML =  '<a target="_blank" href=' + getCompanyCeoANDCfoANDCoo+'>'+getCompany+ ' CEO AND CFO AND COO'+'</a>';
-    document.querySelector(".links6").innerHTML =  '<a target="_blank" href=' + nameANDcompanyLinkedinPresent+'>'+getExecutive+' '+getCompany+' Linkedin - Persent'+'</a>';
+    document.querySelector(".links6").innerHTML =  '<a target="_blank" href=' + nameANDcompanyLinkedinPresent+'>'+getExecutive+' '+getCompany+' Linkedin - Present'+'</a>';
     document.querySelector(".links7").innerHTML =  '<a target="_blank" href=' +nameANDcompanyPrnewswireORbusinesswire+'>'+getExecutive+' '+getCompany+' PR newswiren OR Business Wire'+'</a>';
     
     
