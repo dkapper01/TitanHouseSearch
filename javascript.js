@@ -47,6 +47,11 @@ document.getElementById("OR").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " OR";
 });
 
+document.getElementById("President").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " President";
+});
+
 document.getElementById("Joined").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
     document.getElementById("googleInput").value = googleText + " Joined";
