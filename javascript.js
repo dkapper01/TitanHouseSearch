@@ -87,6 +87,72 @@ document.getElementById("COO").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " COO";
 });
 
+document.getElementById("BusinessWire").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " BusinessWire";
+});
+
+document.getElementById("PRNewswire").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " PRNewswire";
+});
+
+document.getElementById("Facebook").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Facebook";
+});
+
+document.getElementById("Twitter").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Twitter";
+});
+
+document.getElementById("Alumni").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Alumni";
+});
+
+document.getElementById("BusinessInsider").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Business Insider";
+});
+
+document.getElementById("PRWeb").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " PRWeb";
+});
+
+document.getElementById("Reuters").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Reuters";
+});
+
+document.getElementById("NASDAQ").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " NASDAQ";
+});
+
+document.getElementById("PressRelease").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Press Release";
+});
+
+document.getElementById("BusinessJournal").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Business Journal";
+});
+
+document.getElementById("Forbes").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Forbes";
+});
+
+document.getElementById("School").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " School";
+});
+
+
 
 
 
