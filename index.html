@@ -17,41 +17,48 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">TitanSearch</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="search.html">QuickLink</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="suggestion.html">Suggestions</a>
-             
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                X-Ray
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:5uikxuejpns" target="_blank">Bloomberg</a>
-                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:0sdhbfrhd84" target="_blank">Linkedin</a>
-                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:wz4-qnsvttw" target="_blank">Facebook</a>
-                <a class="dropdown-item" href="https://cse.google.com/cse/publicurl?cx=009245502746727767043:kt8vlgtpu7o" target="_blank">Business Wire</a>
-            </li>
-        </ul>
+        <a class="navbar-brand" href="#">
+            <img src="titan.png" width="45" height="45" alt="">
+        </a>
+      <a class="navbar-brand text-warning" href="#">TitanSearch</a>
         <form class="form-inline my-2 my-lg-0" method="get" action="http://www.google.com/search" target="_blank">
-          <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search Google" aria-label="Search" value="">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Google">Search</button>
+          <input id="googleInput" class="form-control " type="search" name="q" placeholder="Search Google" aria-label="Search" value="" style="width:800px">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" value="Google">Search</button>
         </form>
-      </div>
+      <!--</div>-->
     </nav>
     <div class="toAddSpace"></div>
+
+    <div class="container"></div>
+
+
     <div class="container-fluid">
+        <button id="Biography" type="button" class="btn btn-warning btn-sm mb-2">Biography</button>
+        <button id="Linkedin" type="button" class="btn btn-warning btn-sm mb-2">Linkedin</button>
+        <button id="Bloomberg" type="button" class="btn btn-warning btn-sm mb-2">Bloomberg</button>
+        <button id="Present" type="button" class="btn btn-warning btn-sm mb-2">Present</button>
+        <button id="University" type="button" class="btn btn-warning btn-sm mb-2">University</button>
+        <button id="AND" type="button" class="btn btn-warning btn-sm mb-2">AND</button>
+        <button id="Since" type="button" class="btn btn-warning btn-sm mb-2">Since</button>
+        <button id="Collage" type="button" class="btn btn-warning btn-sm mb-2">Collage</button>
+        <button id="OR" type="button" class="btn btn-warning btn-sm mb-2">OR</button>
+        <button id="President" type="button" class="btn btn-warning btn-sm mb-2">President</button>
+        <button id="Joined" type="button" class="btn btn-warning btn-sm mb-2">Joined</button>
+        <button id="Leadership" type="button" class="btn btn-warning btn-sm mb-2">Leadership</button>
+        <button id="Hired" type="button" class="btn btn-warning btn-sm mb-2">Hired</button>
+        <button id="Executives" type="button" class="btn btn-warning btn-sm mb-2">Executives</button>
+        <button id="CEO" type="button" class="btn btn-warning btn-sm mb-2">CEO</button>
+        <button id="CFO" type="button" class="btn btn-warning btn-sm mb-2">CFO</button>
+        <button id="COO" type="button" class="btn btn-warning btn-sm mb-2">COO</button>
+
+
+
+
+
 
       <script>
           (function() {
@@ -65,26 +72,12 @@
           })();
       </script>
       <gcse:search></gcse:search>
+
     </div>
-    <!--<iframe id="contact" src="http://danielkapper.com" allowtransparency="true" frameborder="0" scrolling="yes" width="100%" height="900px"></iframe>-->
 
 
-    <form method="get" action="http://www.google.com/search" target="_blank">
 
-      <!--<div style="border:1px solid black;padding:4px;width:20em;">-->
-        <!--<table border="0" align="center" cellpadding="0">-->
-          <!--<tr><td>-->
 
-          <!--<tr><td align="center" style="font-size:75%">-->
-
-            <!--<input type="radio"  name="sitesearch" value="" />The Web-->
-            <!--<input type="radio"  name="sitesearch"-->
-                   <!--value="yoursite.com" checked /> Only Your Site<br />-->
-
-          </td></tr></table>
-      </div>
-
-    <!--</form>-->
     <script src="javascript.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
