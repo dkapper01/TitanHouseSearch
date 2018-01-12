@@ -25,11 +25,19 @@
             <img src="titan.png" width="45" height="45" alt="">
         </a>
       <a class="navbar-brand text-warning" href="#">TitanSearch</a>
-        <form class="form-inline my-2 my-lg-0" method="get" action="http://www.google.com/search" target="_blank">
-          <input id="googleInput" class="form-control " type="search" name="q" placeholder="Search Google" aria-label="Search" value="" style="width:800px">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" value="Google">Search</button>
+        <!--<form class="form-control" method="get" action="http://www.google.com/search" target="_blank" style="background-color:transparent;border:none;">-->
+            <!--<input id="googleInput" class="form-control " type="search" name="q" placeholder="Search Google" aria-label="Search" value="">-->
+          <!--<button class="btn btn-outline-warning my-2 my-sm-0" type="submit" value="Google" style="float: right;">Search</button>-->
+        <!--</form>-->
+
+        <form class="form-control" method="get" action="http://www.google.com/search" target="_blank" style="background-color:transparent;border:none;margin-right:20%;">
+            <div class="input-group">
+                <input id="googleInput" type="text" class="form-control" type="search" name="q" placeholder="Search Google">
+                <span class="input-group-btn">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </span>
+            </div><!-- /input-group -->
         </form>
-      <!--</div>-->
     </nav>
     <div class="toAddSpace"></div>
 
@@ -58,9 +66,6 @@
         <button id="PRNewswire" type="button" class="btn btn-warning btn-sm mb-2">PRNewswire</button>
         <button id="Facebook" type="button" class="btn btn-warning btn-sm mb-2">Facebook</button>
         <button id="Twitter" type="button" class="btn btn-warning btn-sm mb-2">Twitter</button>
-        <!--<button id="PRNewswire" type="button" class="btn btn-warning btn-sm mb-2">PRNewswire</button>-->
-        <!--<button id="Facebook" type="button" class="btn btn-warning btn-sm mb-2">Facebook</button>-->
-        <!--<button id="Twitter" type="button" class="btn btn-warning btn-sm mb-2">Twitter</button>-->
         <button id="Alumni" type="button" class="btn btn-warning btn-sm mb-2">Alumni</button>
         <button id="BusinessInsider" type="button" class="btn btn-warning btn-sm mb-2">Business Insider</button>
         <button id="PRWeb" type="button" class="btn btn-warning btn-sm mb-2">PRWeb</button>
@@ -70,11 +75,6 @@
         <button id="BusinessJournal" type="button" class="btn btn-warning btn-sm mb-2">Business Journal</button>
         <button id="Forbes" type="button" class="btn btn-warning btn-sm mb-2">Forbes</button>
         <button id="School" type="button" class="btn btn-warning btn-sm mb-2">School</button>
-
-
-
-
-
 
 
       <script>
