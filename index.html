@@ -17,31 +17,38 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link href="bootstrap.css" rel="stylesheet">
+      <link href="bootstrap-switch.css" rel="stylesheet">
+      <script src="jquery.js"></script>
+      <script src="bootstrap-switch.js"></script>
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: blue;">
         <a class="navbar-brand" href="#">
             <img src="titan.png" width="45" height="45" alt="">
         </a>
       <a class="navbar-brand text-warning" href="#">TitanSearch</a>
-        <!--<form class="form-control" method="get" action="http://www.google.com/search" target="_blank" style="background-color:transparent;border:none;">-->
-            <!--<input id="googleInput" class="form-control " type="search" name="q" placeholder="Search Google" aria-label="Search" value="">-->
-          <!--<button class="btn btn-outline-warning my-2 my-sm-0" type="submit" value="Google" style="float: right;">Search</button>-->
-        <!--</form>-->
 
+        <!--<form class="form-control" method="get" action="" id="cse-search-box"style="background-color:transparent;border:none;margin-right:20%;">-->
         <form class="form-control" method="get" action="http://www.google.com/search" target="_blank" style="background-color:transparent;border:none;margin-right:20%;">
             <div class="input-group">
-                <input id="googleInput" type="text" class="form-control" type="search" name="q" placeholder="Search Google">
+                <input id="googleInput" type="text" class="form-control" type="search" value="" name="q" placeholder="Search Google">
                 <span class="input-group-btn">
-        <button class="btn btn-outline-warning" type="submit">Search</button>
-      </span>
-            </div><!-- /input-group -->
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </span>
+            </div>
+                <!--<span>-->
+                    <!--<input type="radio" name="google" value="male" style="margin:10px;" checked>-->
+                    <!--<input type="radio" name="google" value="female" style="margin:10px 0px 10px 0px;">-->
+                <!--</span>-->
         </form>
     </nav>
     <div class="toAddSpace"></div>
 
-    <div class="container"></div>
+    <div class="container">
+
+    </div>
 
 
     <div class="container-fluid">
@@ -77,22 +84,19 @@
         <button id="School" type="button" class="btn btn-warning btn-sm mb-2">School</button>
 
 
-      <script>
-          (function() {
-              var cx = '009245502746727767043:kt8vlgtpu7o';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-          })();
-      </script>
-      <gcse:search></gcse:search>
-
+        <script>
+            (function() {
+                var cx = '009245502746727767043:kt8vlgtpu7o';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:searchresults-only></gcse:searchresults-only>
     </div>
-
-
 
 
     <script src="javascript.js"></script>
