@@ -13,16 +13,16 @@
     <script src="jquery.js"></script>
     <script src="bootstrap-switch.js"></script>
       <script>
-          // var inputValue = document.getElementById("googleInput").value;
-          // console.log(inputValue);
-          // document.getElementById("googleInput").value = "Daniel";
+          function putInTrash() {
+              document.querySelector(".trash-btn").addEventListener("click", function ()  {
+                  alert("working");
+              });
+          }
           function gcsSearch() {
               var bob = document.getElementById("googleInput").value;
-              document.getElementById("googleInput").value = bob;
+              window.name = bob;
               document.getElementById("cse-search-box").action = "";
               document.getElementById("cse-search-box").target = "";
-
-              alert(bob);
           }
           function OnformSubmit() {
               document.getElementById("cse-search-box").action = "http://www.google.com/search"
@@ -36,7 +36,6 @@
             <img src="titanImg.png" width="55" height="45" alt="">
         </a>
         <a class="navbar-brand text-warning" href="#">TitanSearch</a>
-
         <!--<form class="form-control form-style" method="get" action="" id="cse-search-box">-->
         <!--<form class="form-control form-style" method="get" action="http://www.google.com/search" id="google-search" target="_blank">-->
         <form class="form-control form-style" action="" method="get" id="cse-search-box" name="cse-search-box" target="">
@@ -46,16 +45,13 @@
                     <button id="gcs" class="btn btn-outline-warning" type="submit" value="gcs" onclick="gcsSearch()"> Search</button>
                     <button id="googleS" class="btn btn-outline-warning" type="submit" value="googleS" onclick="OnformSubmit()">Google</button>
                 </span>
-                <i class="fa fa-trash " aria-hidden="true" style="color:red"></i>
             </div>
         </form>
+        <button class="trash-btn" onclick="putInTrash()">
+            <i class="fa fa-trash trash-btn-icon text-warning" aria-hidden="true"></i>
+        </button>
     </nav>
     <div class="toAddSpace"></div>
-
-    <div class="container">
-
-    </div>
-
 
     <div class="container-fluid">
         <button id="Linkedin" type="button" class="btn btn-warning btn-sm mb-2">Linkedin</button>
@@ -74,12 +70,12 @@
         <button id="Present" type="button" class="btn btn-secondary btn-sm mb-2">Present</button>
         <button id="Since" type="button" class="btn btn-secondary btn-sm mb-2">Since</button>
         <button id="Joined" type="button" class="btn btn-secondary btn-sm mb-2">Joined</button>
-        <button id="Leadership" type="button" class="btn btn-secondary btn-sm mb-2">Leadership</button>
         <button id="Hired" type="button" class="btn btn-secondary btn-sm mb-2">Hired</button>
         <button id="PressRelease" type="button" class="btn btn-secondary btn-sm mb-2">Press Release</button>
         <button id="Biography" type="button" class="btn btn-secondary btn-sm mb-2">Biography</button>
         <button id="Executives" type="button" class="btn btn-primary btn-sm mb-2">Executives</button>
         <button id="President" type="button" class="btn btn-primary btn-sm mb-2">President</button>
+        <button id="Leadership" type="button" class="btn btn-primary btn-sm mb-2">Leadership</button>
         <button id="CEO" type="button" class="btn btn-primary btn-sm mb-2">CEO</button>
         <button id="CFO" type="button" class="btn btn-primary btn-sm mb-2">CFO</button>
         <button id="COO" type="button" class="btn btn-primary btn-sm mb-2">COO</button>

@@ -2,6 +2,9 @@ console.log('working....');
 
 
 var googleText = document.getElementById("googleInput").value;
+document.getElementById("googleInput").value = window.name;
+
+
 
 document.getElementById("Biography").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
@@ -128,10 +131,10 @@ document.getElementById("Reuters").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Reuters";
 });
 
-document.getElementById("NASDAQ").addEventListener("click", function () {
-    var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " NASDAQ";
-});
+// document.getElementById("NASDAQ").addEventListener("click", function () {
+//     var googleText = document.getElementById("googleInput").value;
+//     document.getElementById("googleInput").value = googleText + " NASDAQ";
+// });
 
 document.getElementById("PressRelease").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;

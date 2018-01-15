@@ -5,8 +5,11 @@
   margin-top: 80px; }
 
 .form-style {
-  margin-right: 20%;
   background-color: transparent !important;
   border: none !important; }
+
+.trash-btn {
+  background-color: transparent;
+  border: none; }
 
 /*# sourceMappingURL=main.css.map */
