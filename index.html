@@ -15,7 +15,12 @@
       <script>
           function putInTrash() {
               document.querySelector(".trash-btn").addEventListener("click", function ()  {
-                  alert("working");
+                  document.getElementById("googleInput").value = "";
+                  // var lastIndex = str.lastIndexOf(" ");
+
+                  // var str = str.substring(0, lastIndex);
+                  // console.log(str);
+
               });
           }
           function gcsSearch() {
