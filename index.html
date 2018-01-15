@@ -1,47 +1,53 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111509463-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-111509463-1');
-    </script>
     <title>TitanSearch</title>
     <link rel="stylesheet" href="main.css">
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+      <script src="https://use.fontawesome.com/02d9ac10af.js"></script>
       <link href="bootstrap-switch.css" rel="stylesheet">
-      <script src="jquery.js"></script>
-      <script src="bootstrap-switch.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap-switch.js"></script>
+      <script>
+          // var inputValue = document.getElementById("googleInput").value;
+          // console.log(inputValue);
+          // document.getElementById("googleInput").value = "Daniel";
+          function gcsSearch() {
+              var bob = document.getElementById("googleInput").value;
+              document.getElementById("googleInput").value = bob;
+              document.getElementById("cse-search-box").action = "";
+              document.getElementById("cse-search-box").target = "";
 
+              alert(bob);
+          }
+          function OnformSubmit() {
+              document.getElementById("cse-search-box").action = "http://www.google.com/search"
+              document.getElementById("cse-search-box").target = "_blank";
+          }
+      </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: blue;">
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #022343;">
         <a class="navbar-brand" href="#">
-            <img src="titan.png" width="45" height="45" alt="">
+            <img src="titanImg.png" width="55" height="45" alt="">
         </a>
-      <a class="navbar-brand text-warning" href="#">TitanSearch</a>
+        <a class="navbar-brand text-warning" href="#">TitanSearch</a>
 
-        <!--<form class="form-control" method="get" action="" id="cse-search-box"style="background-color:transparent;border:none;margin-right:20%;">-->
-        <form class="form-control" method="get" action="http://www.google.com/search" target="_blank" style="background-color:transparent;border:none;margin-right:20%;">
+        <!--<form class="form-control form-style" method="get" action="" id="cse-search-box">-->
+        <!--<form class="form-control form-style" method="get" action="http://www.google.com/search" id="google-search" target="_blank">-->
+        <form class="form-control form-style" action="" method="get" id="cse-search-box" name="cse-search-box" target="">
             <div class="input-group">
-                <input id="googleInput" type="text" class="form-control" type="search" value="" name="q" placeholder="Search Google">
+                <input id="googleInput" type="text" class="form-control" type="search" value="" name="q" placeholder="Search Custom Search Engine or Google">
                 <span class="input-group-btn">
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                    <button id="gcs" class="btn btn-outline-warning" type="submit" value="gcs" onclick="gcsSearch()"> Search</button>
+                    <button id="googleS" class="btn btn-outline-warning" type="submit" value="googleS" onclick="OnformSubmit()">Google</button>
                 </span>
+                <i class="fa fa-trash " aria-hidden="true" style="color:red"></i>
             </div>
-                <!--<span>-->
-                    <!--<input type="radio" name="google" value="male" style="margin:10px;" checked>-->
-                    <!--<input type="radio" name="google" value="female" style="margin:10px 0px 10px 0px;">-->
-                <!--</span>-->
         </form>
     </nav>
     <div class="toAddSpace"></div>
@@ -52,36 +58,37 @@
 
 
     <div class="container-fluid">
-        <button id="Biography" type="button" class="btn btn-warning btn-sm mb-2">Biography</button>
         <button id="Linkedin" type="button" class="btn btn-warning btn-sm mb-2">Linkedin</button>
-        <button id="Bloomberg" type="button" class="btn btn-warning btn-sm mb-2">Bloomberg</button>
-        <button id="Present" type="button" class="btn btn-warning btn-sm mb-2">Present</button>
-        <button id="University" type="button" class="btn btn-warning btn-sm mb-2">University</button>
-        <button id="AND" type="button" class="btn btn-warning btn-sm mb-2">AND</button>
-        <button id="Since" type="button" class="btn btn-warning btn-sm mb-2">Since</button>
-        <button id="Collage" type="button" class="btn btn-warning btn-sm mb-2">Collage</button>
-        <button id="OR" type="button" class="btn btn-warning btn-sm mb-2">OR</button>
-        <button id="President" type="button" class="btn btn-warning btn-sm mb-2">President</button>
-        <button id="Joined" type="button" class="btn btn-warning btn-sm mb-2">Joined</button>
-        <button id="Leadership" type="button" class="btn btn-warning btn-sm mb-2">Leadership</button>
-        <button id="Hired" type="button" class="btn btn-warning btn-sm mb-2">Hired</button>
-        <button id="Executives" type="button" class="btn btn-warning btn-sm mb-2">Executives</button>
-        <button id="CEO" type="button" class="btn btn-warning btn-sm mb-2">CEO</button>
-        <button id="CFO" type="button" class="btn btn-warning btn-sm mb-2">CFO</button>
-        <button id="COO" type="button" class="btn btn-warning btn-sm mb-2">COO</button>
-        <button id="BusinessWire" type="button" class="btn btn-warning btn-sm mb-2">Business Wire</button>
-        <button id="PRNewswire" type="button" class="btn btn-warning btn-sm mb-2">PRNewswire</button>
         <button id="Facebook" type="button" class="btn btn-warning btn-sm mb-2">Facebook</button>
         <button id="Twitter" type="button" class="btn btn-warning btn-sm mb-2">Twitter</button>
-        <button id="Alumni" type="button" class="btn btn-warning btn-sm mb-2">Alumni</button>
-        <button id="BusinessInsider" type="button" class="btn btn-warning btn-sm mb-2">Business Insider</button>
-        <button id="PRWeb" type="button" class="btn btn-warning btn-sm mb-2">PRWeb</button>
-        <button id="Reuters" type="button" class="btn btn-warning btn-sm mb-2">Reuters</button>
-        <button id="NASDAQ" type="button" class="btn btn-warning btn-sm mb-2">NASDAQ</button>
-        <button id="PressRelease" type="button" class="btn btn-warning btn-sm mb-2">Press Release</button>
-        <button id="BusinessJournal" type="button" class="btn btn-warning btn-sm mb-2">Business Journal</button>
-        <button id="Forbes" type="button" class="btn btn-warning btn-sm mb-2">Forbes</button>
-        <button id="School" type="button" class="btn btn-warning btn-sm mb-2">School</button>
+        <button id="AND" type="button" class="btn btn-danger btn-sm mb-2">AND</button>
+        <button id="OR" type="button" class="btn btn-danger btn-sm mb-2">OR</button>
+        <button id="Bloomberg" type="button" class="btn btn-info btn-sm mb-2">Bloomberg</button>
+        <button id="BusinessWire" type="button" class="btn btn-info btn-sm mb-2">Business Wire</button>
+        <button id="PRNewswire" type="button" class="btn btn-info btn-sm mb-2">PRNewswire</button>
+        <button id="BusinessInsider" type="button" class="btn btn-info btn-sm mb-2">Business Insider</button>
+        <button id="PRWeb" type="button" class="btn btn-info btn-sm mb-2">PRWeb</button>
+        <button id="Reuters" type="button" class="btn btn-info btn-sm mb-2">Reuters</button>
+        <button id="BusinessJournal" type="button" class="btn btn-info btn-sm mb-2">Business Journal</button>
+        <button id="Forbes" type="button" class="btn btn-info btn-sm mb-2">Forbes</button>
+        <button id="Present" type="button" class="btn btn-secondary btn-sm mb-2">Present</button>
+        <button id="Since" type="button" class="btn btn-secondary btn-sm mb-2">Since</button>
+        <button id="Joined" type="button" class="btn btn-secondary btn-sm mb-2">Joined</button>
+        <button id="Leadership" type="button" class="btn btn-secondary btn-sm mb-2">Leadership</button>
+        <button id="Hired" type="button" class="btn btn-secondary btn-sm mb-2">Hired</button>
+        <button id="PressRelease" type="button" class="btn btn-secondary btn-sm mb-2">Press Release</button>
+        <button id="Biography" type="button" class="btn btn-secondary btn-sm mb-2">Biography</button>
+        <button id="Executives" type="button" class="btn btn-primary btn-sm mb-2">Executives</button>
+        <button id="President" type="button" class="btn btn-primary btn-sm mb-2">President</button>
+        <button id="CEO" type="button" class="btn btn-primary btn-sm mb-2">CEO</button>
+        <button id="CFO" type="button" class="btn btn-primary btn-sm mb-2">CFO</button>
+        <button id="COO" type="button" class="btn btn-primary btn-sm mb-2">COO</button>
+        <button id="School" type="button" class="btn btn-success btn-sm mb-2">School</button>
+        <button id="Alumni" type="button" class="btn btn-success btn-sm mb-2">Alumni</button>
+        <button id="University" type="button" class="btn btn-success btn-sm mb-2">University</button>
+        <button id="Collage" type="button" class="btn btn-success btn-sm mb-2">Collage</button>
+
+
 
 
         <script>

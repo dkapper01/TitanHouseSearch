@@ -1,5 +1,6 @@
 console.log('working....');
 
+
 var googleText = document.getElementById("googleInput").value;
 
 document.getElementById("Biography").addEventListener("click", function () {
@@ -112,9 +113,9 @@ document.getElementById("Alumni").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Alumni";
 });
 
-document.getElementById("BusinessInsider").addEventListener("click", function () {
+document.getElementById("BusinessJournal").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " Business Insider";
+    document.getElementById("googleInput").value = googleText + " Business" + " Insider";
 });
 
 document.getElementById("PRWeb").addEventListener("click", function () {

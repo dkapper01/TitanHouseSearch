@@ -4,10 +4,9 @@
 .toAddSpace {
   margin-top: 80px; }
 
-.goToMid {
-  text-align: center; }
-
-.nevbar-blue {
-  background-color: red !important; }
+.form-style {
+  margin-right: 20%;
+  background-color: transparent !important;
+  border: none !important; }
 
 /*# sourceMappingURL=main.css.map */
