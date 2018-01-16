@@ -116,9 +116,9 @@ document.getElementById("Alumni").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Alumni";
 });
 
-document.getElementById("BusinessInsider").addEventListener("click", function () {
+document.getElementById("RelationshipScience").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " Business Insider";
+    document.getElementById("googleInput").value = googleText + " Relationship Science";
 });
 
 document.getElementById("PRWeb").addEventListener("click", function () {
