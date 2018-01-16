@@ -93,7 +93,7 @@ document.getElementById("COO").addEventListener("click", function () {
 
 document.getElementById("BusinessWire").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " BusinessWire";
+    document.getElementById("googleInput").value = googleText + " Business Wire";
 });
 
 document.getElementById("PRNewswire").addEventListener("click", function () {
