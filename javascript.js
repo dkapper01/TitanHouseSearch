@@ -1,5 +1,7 @@
 console.log('working....');
 
+// Names
+// Founder
 
 var googleText = document.getElementById("googleInput").value;
 document.getElementById("googleInput").value = window.name;
@@ -7,6 +9,7 @@ document.getElementById("googleInput").value = window.name;
 document.getElementById("Linkedin").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
     document.getElementById("googleInput").value = googleText + " Linkedin";
+    console.log(googleText);
 });
 
 document.getElementById("Bloomberg").addEventListener("click", function () {
@@ -59,6 +62,11 @@ document.getElementById("Joined").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Joined";
 });
 
+document.getElementById("Named").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Named";
+});
+
 document.getElementById("Leadership").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
     document.getElementById("googleInput").value = googleText + " Leadership";
@@ -72,6 +80,11 @@ document.getElementById("Hired").addEventListener("click", function () {
 document.getElementById("Executives").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
     document.getElementById("googleInput").value = googleText + " Executives";
+});
+
+document.getElementById("Founder").addEventListener("click", function () {
+    var googleText = document.getElementById("googleInput").value;
+    document.getElementById("googleInput").value = googleText + " Founder";
 });
 
 document.getElementById("CEO").addEventListener("click", function () {
@@ -129,11 +142,6 @@ document.getElementById("Reuters").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Reuters";
 });
 
-document.getElementById("PressRelease").addEventListener("click", function () {
-    var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " Press Release";
-});
-
 document.getElementById("BizJournal").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
     document.getElementById("googleInput").value = googleText + " Biz Journal";
@@ -144,8 +152,4 @@ document.getElementById("Announce").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Announce";
 });
 
-document.getElementById("School").addEventListener("click", function () {
-    var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " School";
-});
 
