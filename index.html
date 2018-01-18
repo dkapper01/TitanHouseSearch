@@ -13,22 +13,27 @@
     <script src="jquery.js"></script>
     <script src="bootstrap-switch.js"></script>
       <script>
+
           function putInTrash() {
               document.querySelector(".trash-btn").addEventListener("click", function ()  {
 
                   // var str = document.getElementById("googleInput").value;
-                  // var test = str.pop();
-                  //
+                  // // var test = str.pop();
+                  // //
                   // var trimStr = str.trim();
-                  // var ArrStr = trimStr.split(" ");
+                  // var ArrStr = str.split(" ");
+                  // ArrStr.pop();
                   // var popStr = ArrStr.pop();
-                  // console.log(popStr);
+                  // // console.log(popStr);
+                  // var noCommas = ArrStr.replace(/,/g, '');
+                  // console.log(noCommas);
 
 
-              //     var lastIndex = ArrStr.lastIndexOf(" ");
-              //     var newStr = str.substring(0, lastIndex);
-              //     document.getElementById("googleInput").value = ArrStr;
-              //     console.log(str);
+                  //     var lastIndex = ArrStr.lastIndexOf(" ");
+                  //     var newStr = str.substring(0, lastIndex);
+                  //     document.getElementById("googleInput").value = ArrStr;
+                  //     console.log(str);
+
                   alert("Sorry the delete button is not working yet");
               });
           }
@@ -43,10 +48,11 @@
               document.getElementById("cse-search-box").target = "_blank";
           }
       </script>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top" style="background-color: #022343;">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="taxonomy.pdf" target="_blank">
             <img src="titanImg.png" width="55" height="45" alt="">
         </a>
         <a class="navbar-brand text-warning" href="#">TitanSearch</a>
@@ -71,9 +77,9 @@
         <button id="Linkedin" type="button" class="btn btn-warning btn-sm mb-2">Linkedin</button>
         <button id="Facebook" type="button" class="btn btn-warning btn-sm mb-2">Facebook</button>
         <button id="Twitter" type="button" class="btn btn-warning btn-sm mb-2">Twitter</button>
-        <button id="AND" type="button" class="btn btn-danger btn-sm mb-2">AND</button>
-        <button id="OR" type="button" class="btn btn-danger btn-sm mb-2">OR</button>
-        <button id="com" type="button" class="btn btn-danger btn-sm mb-2">.com</button>
+        <button id="AND" type="button" class="btn btn-danger btn-sm mb-2" data-toggle="tooltip" data-placement="bottom" title="Using “AND” within search will make sure both your queries appear within each search">AND</button>
+        <button id="OR" type="button" class="btn btn-danger btn-sm mb-2" data-toggle="tooltip" data-placement="bottom" title="Using ”OR” allows you to search for multiple terms">OR</button>
+        <button id="com" type="button" class="btn btn-danger btn-sm mb-2" >.com</button>
         <button id="Bloomberg" type="button" class="btn btn-info btn-sm mb-2">Bloomberg</button>
         <button id="BusinessWire" type="button" class="btn btn-info btn-sm mb-2">Business Wire</button>
         <button id="PRNewswire" type="button" class="btn btn-info btn-sm mb-2">PRNewswire</button>
@@ -120,5 +126,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
   </body>
 </html>
