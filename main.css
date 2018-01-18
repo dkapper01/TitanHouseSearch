@@ -12,4 +12,8 @@
   background-color: transparent;
   border: none; }
 
+.dropdown-menu-right {
+  right: 0;
+  left: auto; }
+
 /*# sourceMappingURL=main.css.map */
