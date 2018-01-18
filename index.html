@@ -18,6 +18,7 @@
               document.querySelector(".trash-btn").addEventListener("click", function ()  {
 
                   // var str = document.getElementById("googleInput").value;
+                  document.getElementById("googleInput").value = "";
                   // // var test = str.pop();
                   // //
                   // var trimStr = str.trim();
@@ -34,7 +35,7 @@
                   //     document.getElementById("googleInput").value = ArrStr;
                   //     console.log(str);
 
-                  alert("Sorry the delete button is not working yet");
+                  // alert("Sorry the delete button is not working yet");
               });
           }
           function gcsSearch() {
@@ -67,7 +68,7 @@
                 </span>
             </div>
         </form>
-        <button class="trash-btn" onclick="putInTrash()">
+        <button class="trash-btn" style="outline: none;" onclick="putInTrash()">
             <i class="fa fa-trash trash-btn-icon text-warning" aria-hidden="true"></i>
         </button>
     </nav>
