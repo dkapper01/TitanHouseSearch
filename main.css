@@ -13,7 +13,7 @@
   border: none; }
 
 .dropdown-menu-right {
-  right: 0;
-  left: auto; }
+  right: 0 !important;
+  left: auto !important; }
 
 /*# sourceMappingURL=main.css.map */
