@@ -68,9 +68,19 @@
                 </span>
             </div>
         </form>
-        <button class="trash-btn" style="outline: none;" onclick="putInTrash()">
-            <i class="fa fa-trash trash-btn-icon text-warning" aria-hidden="true"></i>
-        </button>
+        <!--<button class="trash-btn" style="outline: none;" onclick="putInTrash()">-->
+            <!--<i class="fa fa-trash trash-btn-icon text-warning" aria-hidden="true"></i>-->
+        <!--</button>-->
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documents
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="taxonomy.pdf" target="_blank">Taxonomy</a>
+                <!--<button class="dropdown-item" type="button">Another action</button>-->
+                <!--<button class="dropdown-item" type="button">Something else here</button>-->
+            </div>
+        </div>
     </nav>
     <div class="toAddSpace"></div>
 
