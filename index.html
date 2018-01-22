@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111509463-1"></script>
     <title>TitanSearch</title>
     <link rel="stylesheet" href="main.css">
@@ -14,30 +15,30 @@
     <script src="bootstrap-switch.js"></script>
       <script>
 
-          function putInTrash() {
-              document.querySelector(".trash-btn").addEventListener("click", function ()  {
-
-                  // var str = document.getElementById("googleInput").value;
-                  document.getElementById("googleInput").value = "";
-                  // // var test = str.pop();
-                  // //
-                  // var trimStr = str.trim();
-                  // var ArrStr = str.split(" ");
-                  // ArrStr.pop();
-                  // var popStr = ArrStr.pop();
-                  // // console.log(popStr);
-                  // var noCommas = ArrStr.replace(/,/g, '');
-                  // console.log(noCommas);
-
-
-                  //     var lastIndex = ArrStr.lastIndexOf(" ");
-                  //     var newStr = str.substring(0, lastIndex);
-                  //     document.getElementById("googleInput").value = ArrStr;
-                  //     console.log(str);
-
-                  // alert("Sorry the delete button is not working yet");
-              });
-          }
+          // function putInTrash() {
+          //     document.querySelector(".trash-btn").addEventListener("click", function ()  {
+          //
+          //         // var str = document.getElementById("googleInput").value;
+          //         document.getElementById("googleInput").value = "";
+          //         // // var test = str.pop();
+          //         // //
+          //         // var trimStr = str.trim();
+          //         // var ArrStr = str.split(" ");
+          //         // ArrStr.pop();
+          //         // var popStr = ArrStr.pop();
+          //         // // console.log(popStr);
+          //         // var noCommas = ArrStr.replace(/,/g, '');
+          //         // console.log(noCommas);
+          //
+          //
+          //         //     var lastIndex = ArrStr.lastIndexOf(" ");
+          //         //     var newStr = str.substring(0, lastIndex);
+          //         //     document.getElementById("googleInput").value = ArrStr;
+          //         //     console.log(str);
+          //
+          //         // alert("Sorry the delete button is not working yet");
+          //     });
+          // }
           function gcsSearch() {
               var bob = document.getElementById("googleInput").value;
               window.name = bob;
@@ -81,9 +82,7 @@
                 <a class="dropdown-item" href="PositionTags.pdf" target="_blank">Position Tags</a>
                 <a class="dropdown-item" href="TitanhouseManual.pdf" target="_blank">Titanhouse Manual</a>
                 <a class="dropdown-item" href="ProfilerandPublisherChecklist.pdf" target="_blank">Profiler and Publisher Checklist</a>
-
-                <!--<button class="dropdown-item" type="button">Another action</button>-->
-                <!--<button class="dropdown-item" type="button">Something else here</button>-->
+                <a class="dropdown-item" href="titansearch.pdf" target="_blank">How to use TitanSearch</a>
             </div>
         </div>
     </nav>
@@ -148,5 +147,5 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
-  </body>
+    <body>
 </html>
