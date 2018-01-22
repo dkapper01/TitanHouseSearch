@@ -8,7 +8,7 @@ document.getElementById("googleInput").value = window.name;
 
 document.getElementById("Linkedin").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " Linkedin";
+    document.getElementById("googleInput").value = googleText + " Linkedin Present";
     console.log(googleText);
 });
 
