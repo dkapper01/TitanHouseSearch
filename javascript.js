@@ -17,9 +17,9 @@ document.getElementById("Bloomberg").addEventListener("click", function () {
     document.getElementById("googleInput").value = googleText + " Bloomberg";
 });
 
-document.getElementById("Present").addEventListener("click", function () {
+document.getElementById("President").addEventListener("click", function () {
     var googleText = document.getElementById("googleInput").value;
-    document.getElementById("googleInput").value = googleText + " Present";
+    document.getElementById("googleInput").value = googleText + " President";
 });
 
 document.getElementById("University").addEventListener("click", function () {
